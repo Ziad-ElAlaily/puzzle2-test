@@ -1,0 +1,177 @@
+/* html {
+  background-image: url("/Images/studyRoom.jpg") no-repeat center center fixed;
+  font-family: "Aladin", cursive; */
+/* Full height */
+/* height: 100%; */
+/* width: 100%; */
+
+/* Center and scale the image nicely */
+/* background-position: center; */
+/* background-repeat: no-repeat;
+  background-size: cover; */
+/* background: url(images/bg.jpg) no-repeat center center fixed;  */
+/* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+body {
+  font-family: "Aladin", cursive !important;
+  overflow: hidden;
+  margin: 0;
+}
+img.bg {
+  position: sticky;
+  width: 102.5%;
+  top: -15%;
+}
+
+.envContainer {
+  /* display: inline-block; */
+  position: fixed;
+  /* float: left; */
+  /* width: 100%;
+  height: 100%; */
+  /* margin: 20% 25%; */
+  /* padding: 2% 5% 2%; */
+}
+.envContainer .smallEnv {
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 31.5%;
+  top: 33.5%;
+  width: 3%;
+  max-width: 3%;
+  /* min-width: 3%;
+  width: 3%;
+  max-width: 3%;
+  top: 33%;
+  left: 31.5%;
+  position: sticky; */
+  z-index: 2;
+}
+.letterContainer {
+  position: absolute;
+  margin: 10% 25%;
+  padding: 2% 5% 2%;
+}
+.letter {
+  width: 60%;
+}
+.letterText {
+  font-family: "Aladin", cursive;
+  position: absolute;
+  top: 6%;
+  left: 23%;
+  /* font-size: 50px; */
+  font-size: 2.5vw;
+  max-height: 50px;
+}
+.letterText2 {
+  font-family: "Aladin", cursive;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 40%;
+  font-size: 1vw;
+  max-width: 50%;
+  max-height: 58%;
+  overflow: hidden;
+}
+.end {
+  top: 75%;
+  left: 30%;
+}
+.sign {
+  top: 80%;
+  left: 30%;
+  color: #dcc189;
+  -moz-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+button.invs {
+  background: transparent;
+  border: none !important;
+  outline: none;
+}
+.txt {
+  display: none;
+}
+.knob {
+  position: absolute;
+  background-color: #482813;
+  left: 45%;
+  top: 50%;
+  width: 13%;
+  opacity: 0.01;
+}
+input {
+  cursor: default;
+}
+/* ------------------Switch -------- */
+.onoffswitch {
+  position: absolute;
+  width: 2.5vw;
+  max-width: 2.5vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  left: 80%;
+  /* z-index: 1; */
+}
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 2vh;
+  max-height: 2vh;
+  padding: 0;
+  line-height: 20px;
+  border: 0px solid #ffffff;
+  border-radius: 1.5vw;
+  background-color: #9e9e9e;
+}
+.onoffswitch-label:before {
+  content: "";
+  display: block;
+  width: 1.5vh;
+  margin: -5px;
+  background: 020100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 31px;
+  border-radius: 1.5vw;
+  box-shadow: 0 6px 12px 0px #757575;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #2b0e00;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label,
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: #2b0e00;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px;
+  background-color: #2b0e00;
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+.knobSwitch {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  top: 0;
+  z-index: 0;
+}

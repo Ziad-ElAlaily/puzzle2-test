@@ -1,0 +1,127 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   font-family: helvetica neue, helvetica, arial, sans-serif;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   user-select: none;
+}
+
+body {
+   background: linear-gradient(#fff,#ddd); 
+}
+
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  margin: 100px;
+  transform: rotateX(-20deg) rotateY(40deg);
+}
+
+.box div {
+   	position: absolute;
+    display: block;
+    backface-visibility: hidden;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15388/wood_texture.jpg);
+    background-size: 200px 100px;
+}
+
+.box div.top {
+  height: 200px;
+  width: 100px;
+  transform: rotateX(90deg);
+  margin-top: -100px;
+}
+
+.box div.right {
+  width: 200px;
+  height: 100px;
+  transform: rotateY(90deg);
+  box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.4);
+}
+
+.box div.bottom {
+  height: 200px;
+  width: 100px;
+  transform: rotateX(-90deg);
+  box-shadow: inset 0px 0px 0px 50px rgba(0, 0, 0, 0.4), -20px 0px 5px rgba(0, 0, 0, 0.2);
+  backface-visibility: visible;
+}
+
+.box div.left-1 {
+  width: 200px;
+  height: 53px;
+  transform: rotateY(-90deg) rotateX(20deg) translateZ(10px);
+  margin-left: -100px;
+  margin-top: 2px;
+}
+
+.box div.left-2 {
+  width: 200px;
+  height: 53px;
+  transform: rotateY(-90deg) rotateX(-20deg) translateZ(10px);
+  box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.4);
+  background-position: bottom center;
+  margin-left: -100px;
+  margin-top: 45px;
+}
+
+.box div.front-1 {
+  height: 100px;
+  width: 100px;
+  transform: translateZ(100.1px);
+  box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.4);
+}
+
+.box div.front-2 {
+   	height: 53px;
+    width: 20px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15388/wood_texture.jpg);
+    transform: translateZ(100px) rotateZ(20deg);
+    margin-left: -10px;
+    margin-top: 2px;
+    background-size: 200px 100px;
+}
+
+.box div.front-3 {
+  height: 53px;
+  width: 20px;
+  background:-webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15388/wood_texture.jpg);
+  transform: translateZ(100px) rotateZ(-20deg);
+  margin-top: 45px;
+  margin-left: -10px;
+  background-size: 200px 100px;
+}
+
+.box div.back-1 {
+  height: 100px;
+  width: 100px;
+  transform: translateZ(-100.1px) rotateY(180deg);
+  box-shadow: inset 0px -50px 100px rgba(0, 0, 0, 0.4);
+}
+
+.box div.back-2 {
+  height: 53px;
+  width: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15388/wood_texture.jpg);
+  transform: translateZ(-100px) rotateY(180deg) rotateZ(-20deg);
+  margin-left: -10px;
+  margin-top: 2px;
+  background-size: 200px 100px;
+}
+
+.box div.back-3 {
+   height: 53px;
+   width: 20px;
+   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/15388/wood_texture.jpg);
+   transform: translateZ(-100px) rotateY(180deg) rotateZ(20deg);
+   margin-top: 45px;
+   margin-left: -10px;
+   background-size: 200px 100px;
+}

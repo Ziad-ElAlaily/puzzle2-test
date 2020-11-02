@@ -1,0 +1,70 @@
+.container-fluid {
+  position: relative;
+  z-index: 9;
+  font-family: "Aladin", cursive;
+  margin: 10% 25%;
+  padding: 2% 5% 2%;
+  text-align: center;
+}
+.hor {
+  display: none;
+  height: 600px;
+}
+
+.welcomeNote {
+  width: 50%;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  display: none;
+  position: absolute;
+}
+.horp {
+  top: 15%;
+  left: 26%;
+  font-size: 2.5rem;
+}
+.horp2 {
+  top: 25%;
+  left: 20%;
+  font-size: 1.5rem;
+}
+.horp3 {
+  text-align: left;
+  top: 35%;
+  left: 20%;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.horp4 {
+  top: 70%;
+  left: 28%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+button {
+  background: transparent;
+  border: none !important;
+  outline: none;
+}
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-50px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+}
+.paper {
+  animation: float 6s ease-in-out infinite;
+}
